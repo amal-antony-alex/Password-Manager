@@ -1,0 +1,13 @@
+# SDKs & libraries (never commit)
+lib/
+
+# Binary / installers
+*.dll
+*.exe
+*.msi
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
