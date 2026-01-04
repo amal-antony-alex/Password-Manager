@@ -1,50 +1,96 @@
-PASSWORD MANAGER
+🔐 Password Manager (Java)
 
-Secure Password Manager with AES Encryption, Master Authentication, and Persistent Storage
+A secure, Java-based Password Manager that uses AES encryption, SHA-256 master authentication, and persistent encrypted storage to safely manage user credentials across sessions.
 
-> Problem Statement:
+📌 Problem Statement
 
-With the rapid increase in the number of digital platforms, users are required to manage numerous accounts, each with unique and complex passwords. Remembering these passwords often leads individuals to adopt insecure practices, such as reusing passwords or storing them in plain text, which increases vulnerability to cyberattacks and data breaches.
+With the growing number of digital services, users are required to maintain multiple accounts with strong and unique passwords. This often leads to insecure practices such as password reuse or storing credentials in plain text, increasing the risk of data breaches and cyberattacks.
 
-Existing password storage methods either lack encryption or rely on insecure local storage, leaving sensitive information exposed. Hence, there is a critical need for a secure, user-friendly, and persistent password management system that ensures passwords remain confidential, accessible, and protected even across multiple sessions.
+Existing password storage solutions either lack proper encryption or rely on insecure local storage mechanisms. There is a clear need for a secure, user-friendly, and persistent password management system that protects sensitive credentials without compromising usability.
 
-> Objective:
+🎯 Objective
 
-To design and develop an enhanced Password Manager application in Java that allows users to securely store, manage, and retrieve passwords. The system will incorporate AES encryption for password security, SHA-256 hashing for master password authentication, and persistent local storage (using files or database) to retain data safely.
+To design and develop a secure Password Manager in Java that enables users to store, retrieve, and manage passwords safely using:
 
-> Features:
+AES encryption for protecting stored passwords
 
-AES Encryption & Decryption:
-All passwords will be encrypted using the Advanced Encryption Standard (AES) before storage and decrypted only upon retrieval.
+SHA-256 hashing for master password authentication
 
-Master Password Authentication:
-Access to the password vault will be protected by a user-defined master password, verified through SHA-256 hashing.
+Persistent local storage to retain encrypted data across sessions
 
-Persistent Encrypted Storage:
-Encrypted passwords will be stored securely in a local file or lightweight database (e.g., SQLite) to retain data even after program termination.
+✨ Key Features
 
-Password Generator:
-The system will include a secure random password generator to help users create strong, unpredictable passwords.
+🔐 AES Encryption & Decryption
+All stored passwords are encrypted using the Advanced Encryption Standard (AES) and decrypted only when required.
 
-User-Friendly GUI Interface (JavaFX):
-A clean, intuitive graphical interface will replace the console-based system, making the application more practical and accessible.
+🔑 Master Password Authentication
+Vault access is protected using a master password verified via SHA-256 hashing.
 
-CRUD Operations:
-Users can add, view, update, or delete stored passwords, ensuring complete management of credentials.
+💾 Persistent Encrypted Storage
+Encrypted credentials are stored securely in a local file or lightweight database (e.g., SQLite).
 
-Activity Logging (Optional):
-The system will maintain a log file of key actions (e.g., password additions or deletions) for better tracking and debugging.
+🔄 CRUD Operations
+Users can Add, View, Update, and Delete stored credentials.
 
-> Outcome:
+🎲 Secure Password Generator
+Generates strong, random, and unpredictable passwords.
 
-A robust and secure Java-based password management application that:
+🖥 JavaFX GUI Interface
+A clean and intuitive graphical user interface for improved usability.
 
-Protects sensitive user data using industry-standard encryption.
+📝 Activity Logging (Optional)
+Logs important actions such as password creation or deletion for tracking and debugging.
 
-Provides persistent storage for passwords across sessions.
+🛠️ Technologies Used
 
-Incorporates authentication and password generation features.
+Java
 
-Offers an interactive GUI for ease of use.
+JavaFX (GUI)
 
-This project demonstrates practical application of cryptography, authentication, secure storage, and GUI development — key concepts in cybersecurity and software engineering.
+AES (Advanced Encryption Standard)
+
+SHA-256 Hashing
+
+File System / SQLite (Persistent Storage)
+
+🧩 System Workflow
+
+User authenticates using a master password
+
+Master password is verified using SHA-256 hashing
+
+Passwords are encrypted using AES before storage
+
+Encrypted data is stored persistently
+
+Decryption occurs only during authorized retrieval
+
+📊 Outcome
+
+The project delivers a robust and secure password management solution that:
+
+Protects sensitive credentials using industry-standard cryptography
+
+Ensures secure and persistent local storage
+
+Provides full credential management through CRUD operations
+
+Enhances usability through a modern GUI
+
+This project demonstrates practical knowledge of cryptography, authentication, secure storage, and GUI-based application development, aligning strongly with cybersecurity and software engineering principles.
+
+🚀 Future Enhancements
+
+Cloud-based encrypted synchronization
+
+Auto-lock and inactivity timeout
+
+Two-factor authentication (2FA)
+
+Export / import encrypted vaults
+
+⚠️ Security Note
+
+Sensitive files, SDKs, and binaries are intentionally excluded from the repository using .gitignore. Users must install required dependencies separately.
+
+⭐ If you like this project, feel free to star the repository!
